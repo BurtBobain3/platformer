@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c6s01sirtsebs"]
+
+[ext_resource type="Script" uid="uid://dkv1uy78mwd03" path="res://script/thingy.tscn.gd" id="1_1s5m1"]
+[ext_resource type="Texture2D" uid="uid://cqgg767meo14e" path="res://script/Screenshot_20250123_153205_Instagram-removebg-preview.png" id="2_f76ts"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rmwuk"]
+
+[node name="thingy" type="Node2D" unique_id=1761093139]
+script = ExtResource("1_1s5m1")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=977400156]
+position = Vector2(241.49998, 230)
+scale = Vector2(0.04191619, 0.04016065)
+texture = ExtResource("2_f76ts")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1452047552]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=812513149]
+position = Vector2(241, 230)
+shape = SubResource("RectangleShape2D_rmwuk")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

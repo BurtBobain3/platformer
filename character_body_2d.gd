@@ -1,4 +1,5 @@
-extends CharacterBody2D
+
+class_name Player extends CharacterBody2D
 
 
 const SPEED = 200.0
@@ -23,3 +24,9 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+var starting_position: Vector2
+func _ready() -> void:
+	starting_position = position
+
+func die() -> void:
+	position = starting_position

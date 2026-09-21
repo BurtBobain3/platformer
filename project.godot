@@ -15,6 +15,13 @@ run/main_scene="uid://mqcg60trcvd0"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+EventControler="*uid://sxggmmp4uekh"
+GameController="*uid://bngwh3ldhd3l2"
+AudioStreamPlayer2d="*uid://doao0uf4rt2ss"
+CharacterBody2d="*uid://kd7uodb8n455"
+
 [display]
 
 window/stretch/mode="canvas_items"

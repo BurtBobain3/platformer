@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://xwupm51cg6p7"]
+
+[ext_resource type="Script" uid="uid://by8mfunvcii6e" path="res://script/thing_ui.gd" id="1_3duxm"]
+[ext_resource type="Texture2D" uid="uid://jvrfdcapoyxk" path="res://Screenshot_20250123_153205_Instagram-removebg-preview.png" id="2_vryc6"]
+
+[node name="thingUI" type="Control" unique_id=42875892]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_3duxm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=151763116]
+position = Vector2(23.00003, 15.9999695)
+scale = Vector2(0.09181637, 0.074297175)
+texture = ExtResource("2_vryc6")
+
+[node name="Label" type="Label" parent="." unique_id=1800991396]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 10.0
+offset_right = 78.0
+offset_bottom = 59.0
+theme_override_colors/font_color = Color(9.57802e-06, 0.8702407, 0.19959173, 1)
+text = "0
+"
